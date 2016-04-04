@@ -1,0 +1,61 @@
+@import "font.less";
+
+
+
+
+/*style box*/
+.box(@width: 100px, @height: 100px, @border: 1px solid black){
+	width:@width;
+	height:@height;
+	border: @border;
+}
+
+.box1{
+	.box(200px, 150px, 1px solid red);
+}
+
+.box2{
+	.box(200px, 150px, 1px solid green);
+}
+
+.box3{
+	.box(200px, 110px, 1px solid blue);
+}
+
+//style font
+
+.p(@font-size: 16px, @font-family: Arial, @color:red){
+	font-size: @font-size;
+	font-family: @font-family;
+	color: @color;
+}
+
+//style a link
+
+	.a(@font-size: 20px, @font-family: Arial, @color:blue){
+	font-size: @font-size;
+	font-family: @font-family;
+	color: @color;
+	};
+
+//style span
+
+	.span(@font-size: 20px, @font-family: Arial, @color:blue){
+	font-size: @font-size;
+	font-family: @font-family;
+	color: @color;
+	}
+
+
+
+.box1, .box2, .box3{
+	p{
+		.p;
+		span{
+			.span
+		}; 
+		a{
+			.a
+		}
+	}
+}	
