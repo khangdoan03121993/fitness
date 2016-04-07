@@ -1,0 +1,91 @@
+.float(@item:left){
+	float:@item;
+}
+
+.img(){
+	max-width:100%;
+}
+
+.margin(@marginTop: 0, @marginBottom: 0, @marginLeft: 0, @marginRight: 0){
+	margin-top: @marginTop;
+	margin-left: @marginLeft;
+	margin-right: @marginRight;
+	margin-bottom: @marginBottom;
+}
+
+.padding(@paddingTop:0, @paddingBottom:0, @paddingLeft:0, @paddingRight:0){
+	padding-top: @paddingTop;
+	padding-left: @paddingLeft;
+	padding-right: @paddingRight;
+	padding-bottom: @paddingBottom; 
+}
+
+.relative(){
+	position:relative;
+}
+
+.absolute(@index: 999, @top: 0, @left: 0){
+	position: absolute;
+	z-index: @index;
+	top: @top;
+	left: @left;
+}
+
+.absoluteRight(@index: 999, @top: 0, @right: 0){
+	position: absolute;
+	z-index: @index;
+	top: @top;
+	right: @right;
+}
+
+.absoluteBottom(@index: 999, @bottom: 0, @left: 0){
+	position: absolute;
+	z-index: @index;
+	bottom: @bottom;
+	left: @left;
+}
+
+.size(@width:100%, @height:auto, @background:none){
+	width: @width;
+	height: @height;
+	background: @background;	
+}
+
+.p(@fontSize: 16px, @color: black){
+		font-size: @fontSize;
+		color: @color;
+}
+
+.a(@fontSize: 16px,  @color: black){
+		font-size: @fontSize;
+		color: @color;
+}
+
+.span(@color:black){
+	color:@color;
+}
+
+.opacity(@item: 0.6){
+	opacity:@item;
+}
+
+.text-align(@item: center){
+	text-align: @item;
+}
+
+.text-decoration(@item: none){
+	text-decoration: @item;
+}
+
+.line-height(@item: 1){
+	line-height: @item;
+} 
+
+.font-weight(@item: bold){
+	font-weight: @item;
+}
+
+.border-radius(@item:10px){
+	border-radius: @item;
+}
+

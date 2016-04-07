@@ -4,13 +4,13 @@
 	<title>Fitness</title>
 	<meta charset="utf-8">	
 	<link rel="stylesheet/less" type="text/css" href="styles/styles.less">
+	<link rel="stylesheet" href="styles/styles.css">
 	<script src="js/less.js" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
 	<script src="js/jquery-1.12.2.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/custom.js"></script>
@@ -27,15 +27,24 @@
 							<p class="border-bottom"></p>
 						</a>
 					</div>
-					<div class="menu">
+					<div class="nav"></div>
+					<div class="menu open">
 						<ul>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">HOW IT WORKS</a></li>
-							<li><a href="#">SERVICES</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">CONTACT</a></li>
+							<li><a href="#"><p>ABOUT</p></a></li>
+							<li><a href="#"><p>HOW IT WORKS</p></a></li>
+							<li>
+								<a href="#"><p>SERVICES</p></a>
+								<ul>
+									<li><a href=""><p>SERVICES1</p></a></li>
+									<li><a href=""><p>SERVICES2</p></a></li>
+									<li><a href=""><p>SERVICES3</p></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><p>FAQ</p></a></li>
+							<li><a href="#"><p>CONTACT</p></a></li>
 						</ul>
 					</div>
+
 				</div>
 				<div class="header-mid">
 					<div class="header-mid-top">
@@ -213,32 +222,36 @@
 		<div class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="resouces col-xs-20 col-sm-7 col-md-7">
-						<p>Resources</p>
-						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
-						work-in-progress by dragging images into projects and sharable client groups</p>
-					</div>
-					<div class="about-us col-xs-20 col-sm-8 col-md-8">
-						<p>About us</p>
-						<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
-						work-in-progress by dragging images into projects and sharable client groups</p>
-					</div>
-					<div class="stay col-xs-20 col-sm-5 col-md-5">
-						<p>Stay in touch</p>
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
+					<div class="footer-top">
+						<div class="resouces col-xs-20 col-sm-7 col-md-7">
+							<p>Resources</p>
+							<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+							work-in-progress by dragging images into projects and sharable client groups</p>
+						</div>
+						<div class="resouces col-xs-20 col-sm-8 col-md-8">
+							<p>About us</p>
+							<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable client groups.
+							work-in-progress by dragging images into projects and sharable client groups</p>
+						</div>
+						<div class="resouces stay col-xs-20 col-sm-5 col-md-5">
+							<p>Stay in touch</p>
+							<ul>
+								<li><a href="#"><p class="social"><i class="fa fa-facebook"></i></p></a></li>
+								<li><a href="#"><p class="social"><i class="fa fa-twitter"></i></p></a></li>
+								<li><a href="#"><p class="social"><i class="fa fa-youtube-play"></i></p></a></li>
+								<li><a href="#"><p class="social"><i class="fa fa-linkedin"></i></p></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-20 col-sm-20 col-md-7"></div>
-					<div class="col-xs-20 col-sm-20 col-md-13">
-						<input type="text" placeholder="Your Name">
-						<input type="text" placeholder="Your Email">
-						<button type="button">Join Newsletter <i class="fa fa-chevron-circle-right"></i></button>
+					<div class="footer-mid">
+						<div class="col-xs-20 col-sm-20 col-md-7"></div>
+						<div class="col-xs-20 col-sm-20 col-md-13">
+							<input type="text" placeholder="Your Name" class="name">
+							<input type="text" placeholder="Your Email" class="email">
+							<button type="button" class="button"><p>Join Newsletter <i class="fa fa-chevron-circle-right"></i></p></button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,10 +1,3 @@
-// Can also be used with $(document).ready()
-
-
-
-
-
-
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide"
@@ -12,7 +5,10 @@ $(window).load(function() {
 
   $('.nav').click(function(){
 		$(this).parent().find('.menu').toggleClass('open');
+    $('.header-mid').toggleClass('open');
 	})
+
+
 
   $('.slider').find('ol').addClass('pagging');
   $('.pagging').find('a').empty();
@@ -21,9 +17,15 @@ $(window).load(function() {
   $('.nextPrev').find('li:first-child a').append('<i class="fa fa-angle-double-left"></i>');
   $('.nextPrev').find('li:last-child a').append('<i class="fa fa-angle-double-right"></i>');
 
-  //animate
- 
 
+});
+
+$(window).resize(function(){
+  if ($(window).width() <= 768){  
+    $(".item").removeClass('flex');
+  } else if ($(window).width() > 768){
+    $(".item").addClass('flex');
+  } 
 });
 
 

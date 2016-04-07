@@ -1,0 +1,126 @@
+@import "../functions/functions.less";
+
+
+.header{
+	.size;
+	.relative;
+}
+.main-slider{
+	.img;
+}
+.wrap{
+	.absolute;
+	.size;
+}
+
+.header-top{
+	.size(100%, 90px, none);
+	.relative;
+}
+
+.nav{
+	.size(0, 0, none);
+}
+
+.logo {
+	.size(50%,auto,none);
+	.float;
+	.padding(40px,0,52px,0);
+}
+
+.logo p{
+	.margin(0,0,0,0);
+}
+
+.logo p.img{
+	.float;
+}
+
+.logo p.title-logo{
+	.padding(0,0,40px,0);
+	.p(24px, white);
+}
+
+.logo p.border-bottom{
+	.size(40px, 5px, #a2ca28);
+	.margin(0,0, 40px, 0);
+}
+
+.menu{
+	.size(50%,auto,none);
+	.float(right);
+	.padding(55px,0,0,52px);
+}
+
+.menu ul{
+	.padding(0,0,0,0);
+}
+
+.menu ul li{
+	.float;
+	.padding(0,0,0,55px);
+	.relative;
+}
+
+.menu ul li a{
+	.a(13px, white);
+}
+
+.header-mid{
+	.padding(500px, 35px, 0, 0);
+}
+
+.header-mid  p{
+	.margin(0,0,0,0);
+}
+
+.header-mid .header-mid-top p{
+	.p(40px, white);
+	.padding(0,0, 40px, 0);
+}
+
+.header-mid .header-mid-top p span{
+	.span(#a2ca28);
+}
+
+.header-mid .header-mid-bottom p span{
+	.span(#fd634e);
+}
+
+.header-mid .header-mid-bottom p{
+	.p(15px, white);
+	.padding(0, 0, 275px, 0);
+}
+
+.shape-top{
+	.size(100%, auto, #683f41);
+
+}
+
+.menu ul li:hover a{
+	border-bottom: 1px solid white;
+}
+
+.menu ul li > ul{
+	display: none;
+}
+
+.menu ul li:hover> ul{
+	.size(100px, auto, none);
+	.absolute(99, 10px,0);
+	.padding(20px, 10px, 0, 0);
+	display: block;
+}
+
+.menu ul li > ul li{
+	.padding(0,0,15px,0);
+}
+
+.menu ul li > ul li a > p{
+	.text-align;
+}
+
+
+
+
+
